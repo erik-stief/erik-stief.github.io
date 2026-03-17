@@ -22,7 +22,6 @@
     print('<span class="dim">[hint]</span> type <span class="ok">help</span> to list commands');
   };
 
-  // Fake CMD
   const cmds = {
     help: () => {
       print('commands: <span class="ok">help</span>, <span class="ok">whoami</span>, <span class="ok">projects</span>, <span class="ok">contact</span>, <span class="ok">clear</span>');
@@ -70,7 +69,6 @@
     });
   });
 
-  // Fun Status Lines
   const statusLines = [
     'SOC telemetry: nominal',
     'IDS: green · no alerts',
