@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Erik Stiefeling · Cybersecurity</title>
+  <meta name="description" content="Cybersecurity student — malware research, CTFs, software engineering." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar" role="banner">
+    <div class="brand">
+      <span class="sigil" aria-hidden="true">▣</span>
+      <a href="#" class="brand__name">erik@portfolio</a>
+      <span class="brand__hint" aria-hidden="true">:~$</span>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="nav__cta" href="#resume">Resume</a>
+    </nav>
+  </header>
+
+  <main id="main" class="main" role="main">
+    <section class="hero" aria-label="Intro">
+      <div class="hero__grid">
+        <div class="hero__left">
+          <p class="kicker">CYBERSECURITY · SOFTWARE DEVELOPMENT · CTFs</p>
+          <h1 class="glitch" data-text="Erik Stiefeling">Erik Stiefeling</h1>
+          <p class="lede">
+            Cybersecurity student focused on malware analysis, reverse engineering, and building secure software.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="chips" aria-label="Highlights">
+            <span class="chip">Malware research</span>
+            <span class="chip">Reverse engineering</span>
+            <span class="chip">Web security</span>
+            <span class="chip">CTF competitor</span>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <section class="terminal" aria-label="Terminal">
+            <div class="terminal__bar">
+              <span class="dot dot--r"></span>
+              <span class="dot dot--y"></span>
+              <span class="dot dot--g"></span>
+              <span class="terminal__title">session: secure-shell</span>
+            </div>
+
+            <div class="terminal__body" id="term" role="log" aria-live="polite"></div>
+
+            <form class="terminal__form" id="termForm" autocomplete="off">
+              <label class="terminal__prompt" for="termInput">
+                <span class="prompt__user">erik</span><span class="prompt__host">@toronto</span><span class="prompt__path">:~/portfolio</span><span class="prompt__sig">$</span>
+              </label>
+              <input id="termInput" name="cmd" class="terminal__input" type="text" spellcheck="false" inputmode="text" placeholder="try: help" />
+              <button class="terminal__send" type="submit">Run</button>
+            </form>
+
+            <div class="terminal__quick" aria-label="Quick commands">
+              <button class="pill" data-cmd="help" type="button">help</button>
+              <button class="pill" data-cmd="whoami" type="button">whoami</button>
+              <button class="pill" data-cmd="projects" type="button">projects</button>
+              <button class="pill" data-cmd="contact" type="button">contact</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <p class="status" aria-label="System status">
+        <span class="status__label">status</span>
+        <span class="status__value" id="statusLine">Initializing…</span>
+      </p>
+    </section>
+
+    <section id="about" class="section">
+      <header class="section__header">
+        <h2>About</h2>
+        <p>Builder mindset, security-first defaults, and a love for hard problems.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <h3>What I do</h3>
+          <p>
+            I build software and explore security problems: malware analysis, reverse engineering, and practical defensive engineering.
+          </p>
+        </article>
+        <article class="card">
+          <h3>How I work</h3>
+          <p>
+            Start with threat models and constraints, then ship small iterations with strong instrumentation and clean code.
+          </p>
+        </article>
+        <article class="card">
+          <h3>What I’m learning</h3>
+          <p>
+            Modern exploit development, deeper Windows internals, and production-grade detection engineering.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+    <h2>Experience</h2>
+    <p>Recent internships and experiences.</p>
+
+    <article class="experience-item">
+      <h3>Software Developer Intern · Stoch Analytics</h3>
+      <p class="meta">Toronto, ON · Summer 2025</p>
+      <ul>
+        <li>Built a cross‑platform Electron desktop web app using TypeScript, HTML, and CSS for internal analytic workflows.</li>
+        <li>Engineered Python data‑processing pipelines to compress large client datasets while preserving analytic fidelity.</li>
+        <li>Assisted the CISO with cloud pipeline configuration and security tasks, improving the basic cloud security posture.</li>
+      </ul>
+    </article>
+
+    <article class="experience-item">
+      <h3>Consulting Intern · Oliver Wyman (Fulcrum)</h3>
+      <p class="meta">New York, NY · Summer 2024</p>
+      <ul>
+        <li>Automated a recurring client process, reducing task time from about 30 minutes to 5 minutes using scripts and documentation.</li>
+        <li>Used JSON dictionaries and Excel to extract, compare, and validate API and insurance data for faster, more accurate implementations.</li>
+        <li>Worked directly with clients and internal teams in time‑sensitive environments, tracking and resolving issues end‑to‑end.</li>
+      </ul>
+    </article>
+
+    <article class="experience-item">
+      <h3>Software Developer Intern · Oliver Wyman (Fulcrum)</h3>
+      <p class="meta">Toronto, ON · Summer 2023</p>
+      <ul>
+        <li>Contributed to an Electron app using JavaScript, Python, HTML, and CSS with a focus on front‑end and UI/UX.</li>
+        <li>Implemented a “Meko Chart” interface and variable‑renaming feature for Excel workflows, improving usability and reducing manual updates.</li>
+      </ul>
+    </article>
+
+    <article class="experience-item">
+      <h3>Data Analyst Intern · Oliver Wyman (Fulcrum)</h3>
+      <p class="meta">Toronto, ON · Summer 2022</p>
+      <ul>
+        <li>Optimized SQL Server queries and data handling, increasing system validation rates by roughly 40–50%.</li>
+        <li>Partnered with actuaries and clients on data reconciliation, migrations, and reporting for large insurance projects.</li>
+      </ul>
+    </article>
+  </section>
+
+    <section id="projects" class="section">
+      <header class="section__header">
+        <h2>Projects</h2>
+        <p>Selected builds and security experiments.</p>
+      </header>
+
+      <div class="grid">
+        <article class="proj">
+          <h3>Malware Research Lab</h3>
+          <p>Custom samples for analysis, evasion/detection exploration, and repeatable analysis notes.</p>
+          <div class="proj__meta">
+            <span class="tag">Reverse engineering</span>
+            <span class="tag">Behavior analysis</span>
+            <span class="tag">Windows</span>
+          </div>
+          <div class="proj__links">
+            <a class="link" href="https://github.com/erik-stief/Gould-Stiefeling-Malware-Research-And-Analysis-Project" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h3>CTF Writeups</h3>
+          <p>Small utilities and notes for OSINT, web, crypto, reversing, and forensics workflows.</p>
+          <div class="proj__meta">
+            <span class="tag">Burp</span>
+            <span class="tag">Ghidra</span>
+            <span class="tag">Pwntools</span>
+          </div>
+          <div class="proj__links">
+            <a class="link" href="ctf-writeups/ctf-writeups.html">CTF Writeups</a> <br>
+            <a class="link" href="https://github.com/erik-stief/CTF-Writeups" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h3>Portfolio + Quiz Web Apps</h3>
+          <p>Modern web builds with clean UI, pragmatic engineering, and an eye for security basics.</p>
+          <div class="proj__meta">
+            <span class="tag">TypeScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Automation</span>
+          </div>
+          <div class="proj__links">
+            <a class="link" href="https://github.com/erik-stief" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <header class="section__header">
+        <h2>Skills</h2>
+        <p>Practical tools and languages I use to build and break things (ethically).</p>
+      </header>
+
+      <div class="split">
+        <div class="panel">
+          <h3>Security</h3>
+          <ul class="list">
+            <li>Web security fundamentals, threat modeling, secure-by-default habits.</li>
+            <li>Reverse engineering workflows with Ghidra; basic dynamic analysis.</li>
+            <li>CTF practice across OSINT, reversing, crypto, and web.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Engineering</h3>
+          <ul class="list">
+            <li>Python, JavaScript/TypeScript, C/C++, SQL.</li>
+            <li>Electron apps and UI-focused front-end work.</li>
+            <li>Automation: scripting, data pipelines, and reliability improvements.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <header class="section__header">
+        <h2>Resume</h2>
+        <p>One-page PDF, plus links.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Download</h3>
+          <p><a class="btn" href="assets/documents/Resume.pdf">Resume.pdf</a></p>
+        </article>
+        <article class="card">
+          <h3>GitHub</h3>
+          <p><a class="btn" href="https://github.com/erik-stief" target="_blank" rel="noreferrer">github.com/erik-stief</a></p>
+        </article>
+        <article class="card">
+          <h3>LinkedIn</h3>
+          <p><a class="btn" href="https://www.linkedin.com/in/erik-stiefeling-085973287">linkedin.com/in/erik-stiefeling</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <header class="section__header">
+        <h2>Contact</h2>
+        <p>GitHub Pages is static—use email or a form backend.</p>
+      </header>
+
+      <div class="split">
+        <div class="panel">
+          <h3>Fastest</h3>
+          <a class="link" href="mailto:estiefeling@outlook.com">Send me an email!</a>
+        </div>
+
+        <div class="panel">
+          <h3>Form (static-friendly)</h3>
+          <form class="form" action="https://formspree.io/f/xaqdkovy" method="POST">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        <span class="muted">©</span> <span id="year"></span> Erik Stiefeling · Built for GitHub Pages
+      </p>
+    </footer>
+  </main>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

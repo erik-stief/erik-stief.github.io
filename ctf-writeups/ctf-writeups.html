@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CTF Writeups – Erik Stiefeling</title>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+</head>
+<body>
+  <a href="#content" class="skip">Skip to content</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="sigil">&gt;_</span>
+      <span class="brand__name">Erik Stiefeling</span>
+      <span class="brand__hint">malware · pwn · crypto</span>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Overview</a>
+      <a href="ctf-writeups.html" class="nav__cta">CTF Writeups</a>
+    </nav>
+  </header>
+
+  <main id="content" class="main">
+    <section class="section">
+      <div class="section__header">
+        <h2>CTF Writeups</h2>
+        <p>Browse by year, event, and challenge. Click a challenge to load the full writeup.</p>
+      </div>
+
+      <div class="ctf-shell">
+        <aside class="ctf-shell__sidebar">
+          <h3 class="ctf-shell__title">Index</h3>
+          <div id="ctf-tree" class="ctf-tree">Loading writeups from GitHub…</div>
+        </aside>
+
+        <section class="ctf-shell__viewer">
+          <h3 id="ctf-viewer-title" class="ctf-viewer__title">Select a challenge</h3>
+          <p id="ctf-viewer-meta" class="ctf-viewer__meta"></p>
+          <div id="ctf-viewer-content" class="ctf-viewer__content">
+            Writeup content will appear here.
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>CTFs · reverse engineering · cryptography</span>
+    </footer>
+  </main>
+
+  <script src="writeup.js"></script>
+</body>
+</html>
